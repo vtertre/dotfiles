@@ -1,0 +1,17 @@
+## intelliJ
+.idea/
+*.iml
+
+## gradle
+.gradle/
+build/
+
+## python
+*.pyc
+venv
+
+## osx
+.DS_Store
+
+## jenv
+.java-version

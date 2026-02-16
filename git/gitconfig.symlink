@@ -1,0 +1,50 @@
+# Local/private config goes in the include
+[include]
+        path = ~/.gitconfig.local
+
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+
+[color]
+	ui = auto
+
+[diff]
+    renamelimit = 0
+
+[alias]
+    su = status -sb
+	undo = reset --hard "HEAD~1"
+	uncommit = reset "HEAD~1"
+	lg = log --graph --oneline --decorate
+	co = checkout
+
+[push]
+	default = simple
+
+[pull]
+    rebase = true
+
+[help]
+	autocorrect = 10
+
+[merge]
+	conflictstyle = merge
+
+[rerere]
+	enabled = 1
+
+[credential]
+	helper = osxkeychain
+
+[status]
+	showUntrackedFiles = all
+
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+
+[rebase]
+    autosquash = true
+    autostash = true
