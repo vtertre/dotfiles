@@ -1,1 +1,1 @@
-export PATH="$ZSH/bin:$PATH"
+export PATH="$HOME/.local/bin:$ZSH/bin:$PATH"
