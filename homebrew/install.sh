@@ -10,6 +10,9 @@ if test ! $(which brew)
 then
   echo "  Installing Homebrew for you."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+  # Make brew available immediately in the current session
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 exit 0
