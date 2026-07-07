@@ -2,6 +2,7 @@ cask_args appdir: '/Applications'
 
 brew 'nvm'
 brew 'gh'
+brew 'tailscale'
 brew 'summarize'
 
 cask 'ghostty'
