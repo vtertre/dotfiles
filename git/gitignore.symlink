@@ -13,9 +13,3 @@ venv
 ## osx
 .DS_Store
 
-## jenv
-.java-version
-
-## AI
-.claude
-CLAUDE.md
